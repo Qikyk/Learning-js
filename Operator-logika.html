@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      //Operator Logika
+      let nilaiUjian = 70;
+      let nilaiAbsen = 70;
+      let lulus = 75;
+
+      nilaiUjian = nilaiUjian > lulus; // false
+      document.writeln(nilaiUjian);
+      nilaiAbsen = nilaiAbsen > lulus; //false
+      document.writeln(nilaiAbsen);
+
+      lulus = nilaiAbsen && nilaiUjian;
+      document.writeln(lulus); //false
+    </script>
+  </body>
+</html>
