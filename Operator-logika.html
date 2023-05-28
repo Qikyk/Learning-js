@@ -7,6 +7,7 @@
   <body>
     <script type="text/javascript" charset="utf-8">
       //Operator Logika
+      /*
       let nilaiUjian = 70;
       let nilaiAbsen = 70;
       let lulus = 75;
@@ -17,7 +18,39 @@
       document.writeln(nilaiAbsen);
 
       lulus = nilaiAbsen && nilaiUjian;
-      document.writeln(lulus); //false
+      document.writeln(lulus);*/
+      //false
+
+      // latihan soal
+      let nilaiUh = 76;
+      let nilaiTugas = 80;
+      let nilaiKkm = 75;
+
+      nilaiUh = nilaiUh > nilaiKkm;
+      document.writeln(nilaiUh + "</br>");
+
+      nilaiTugas = nilaiTugas > nilaiKkm;
+      document.writeln(nilaiTugas + "</br>");
+
+      let lulus = nilaiTugas && nilaiUh;
+      document.writeln(lulus);
+
+      //latihan soal 2
+      let nilaiAgama = 70;
+      let nilaiBahasaIndonesia = 80;
+      let nilaiMtk = 76;
+
+      nilaiAgama = nilaiAgama > nilaiKkm;
+      document.writeln("</br>" + nilaiAgama + "</br>"); //false
+
+      nilaiBahasaIndonesia = nilaiBahasaIndonesia > nilaiKkm;
+      document.writeln(nilaiBahasaIndonesia + "</br>"); //true
+
+      nilaiMtk = nilaiMtk > nilaiKkm;
+      document.writeln(nilaiMtk + "</br>"); //true
+
+      lulus = nilaiMtk ||  nilaiBahasaIndonesia || nilaiAgama;
+      document.writeln(lulus + "</br>"); //true
     </script>
   </body>
 </html>
